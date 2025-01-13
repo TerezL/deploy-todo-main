@@ -1,0 +1,15 @@
+{
+  "name": "deploy-todo",
+  "version": "1.0.0",
+  "description": "",
+ 
+  "scripts": {
+    "build": "if-env TYPE=server && (cd server && npm install) || (cd client && npm install)",
+    "server": "node ./server/server.js",
+    "cient": "cd client && npm start"
+  },
+  
+  "dependencies": {
+    "if-env": "^1.0.4"
+  }
+}
